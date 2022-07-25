@@ -49,9 +49,9 @@ function App() {
   };
 
   return (
-    <div className="">
+    <div className="font-prompt">
       <Header />
-      <main className="md:flex xl:px-36 p-5 md:py-10 container mx-auto gap-3">
+      <main className="md:flex xl:px-36 p-5 md:py-20 container mx-auto gap-3">
         <Formulario
           crearPaciente={crearPaciente}
           editarPaciente={editarPaciente}

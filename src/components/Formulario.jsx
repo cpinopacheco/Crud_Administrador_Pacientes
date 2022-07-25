@@ -24,12 +24,6 @@ const Formulario = ({
   const { id, nombre, apellido, email, fechaIngreso, fechaAlta, sintomas } =
     formData;
 
-  /*   const dia = fechaIngreso.getDate();
-  const mes = fechaIngreso.getMonth() + 1;
-  const anio = fechaIngreso.getFullYear();
-
-  */
-
   useEffect(() => {
     if (dataEditar) {
       setFormData(dataEditar); //pasamos los datos al formulario
@@ -73,13 +67,13 @@ const Formulario = ({
   };
 
   return (
-    <div className="md:w-1/2 lg:w-2/5">
-      <h2 className="font-black text-3xl text-center">
+    <div className="md:w-1/2 lg:w-2/5 my-5">
+      <h2 className="font-black text-2xl text-center uppercase">
         {dataEditar ? "Editar Paciente" : "Ingresar Paciente"}
       </h2>
 
       <form
-        className="p-5 my-7 bg-slate-100 rounded-xl"
+        className="p-5 my-7 bg-slate-100 rounded-xl shadow-lg"
         onSubmit={handleSubmit}
       >
         {estadoAlerta && <Alerta mensaje="Todos los campos son obligatorios" />}
@@ -152,7 +146,7 @@ const Formulario = ({
         <input
           type="submit"
           value={dataEditar ? "Guardar Cambios" : "Agregar Paciente"}
-          className="w-full bg-blue-600 text-white uppercase font-medium p-3 rounded-lg hover:bg-indigo-700 cursor-pointer transition-all"
+          className="w-full bg-green-700 hover:bg-green-800 text-white uppercase font-medium p-3 rounded-lg  cursor-pointer transition-all"
         />
       </form>
     </div>

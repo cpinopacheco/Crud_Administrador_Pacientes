@@ -3,9 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.jsx"],
   theme: {
     extend: {},
-    /* fontFamily: {
-      montserratAlternates: ["Montserrat Alternates", "sans-serif"],
-    }, */
+    fontFamily: {
+      prompt: ["Prompt", "sans-serif"],
+    },
   },
   plugins: [],
 };

@@ -1,7 +1,9 @@
 export const formatearFecha = (date) => {
-  const dia = date.getDate();
-  const mes = date.getMonth() + 1;
-  const anio = date.getFullYear();
+  const d = new Date(date);
+
+  const dia = d.getDate();
+  const mes = d.getMonth() + 1;
+  const anio = d.getFullYear();
 
   const fechaFormateada = `${anio}-0${mes}-${dia}`;
 
